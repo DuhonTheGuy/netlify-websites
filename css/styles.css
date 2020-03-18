@@ -1,0 +1,56 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    display: inline;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+header {
+	position: fixed;
+    height: 50px;
+    top: -6px;
+    background: rgb(95, 155, 211);
+    width: 100%;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    margin: 15px;
+}
+
+/* .gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.05);
+} */
+
+h1 {
+    font-size: 50px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* .dateSelector {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    text-align: center;
+    height: 50px;
+    background: rgb(95, 155, 211);
+} */
