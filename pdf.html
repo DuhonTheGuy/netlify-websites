@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula do Fernando | PDF</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/fernando.png">
+</head>
+<body>
+    <header>
+        <ul style="list-style-type: none;">
+            <li><a href="index.html">Images</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pdf.html">PDF</a></li>
+                Mês:
+                <select id="selectBox" onclick="scrollToClass()">
+                    <option value="março">Março</option>
+                </select>
+        </ul>           
+    </header>
+    <section>
+        <h1 class="centered">Arquivos PDF</h1>
+            <a href="PDF/March 2020/março_2020.pdf" target="_blank" class="border">Março</a>
+    </section>
+
+    <script>
+        function scrollToClass () {
+            const select = document.getElementById('selectBox')
+            select.addEventListener('change', event => {
+                console.log(event.target.value)
+                document.getElementById(event.target.value).scrollIntoView();
+            })
+        }
+    </script>
+</body>
+</html>

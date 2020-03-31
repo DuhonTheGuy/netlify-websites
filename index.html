@@ -11,18 +11,23 @@
 </head>
 <body>
     <header>
-        <ul style="list-style-type: none;">
-            <li><a href="index.html">Imagens</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            Selecione uma aula:
-            <select id="selectBox" onclick="scrollToClass()">
-                <option value="16/03/20">16/03</option>
-                <option value="18/03/20">18/03</option>
-                <option value="19/03/20">19/03</option>
-                <option value="25/03/20">25/03</option>
-                <option value="26/03/20">26/03</option>
-            </select>
-        </ul>
+            <ul style="list-style-type: none;">
+                <li><a href="index.html">Imagens</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="pdf.html">PDF</a></li>
+                <div id="selector">
+                    Data:
+                    <select id="selectBox" onclick="scrollToClass()">
+                        <option value="16/03/20">16/03</option>
+                        <option value="18/03/20">18/03</option>
+                        <option value="19/03/20">19/03</option>
+                        <option value="25/03/20">25/03</option>
+                        <option value="26/03/20">26/03</option>
+                        <option value="30/03/20">30/03</option>
+                    </select>
+                </div>
+            </ul>
+                
     </header>
 
     <section>
@@ -77,6 +82,11 @@
             <a href="images/quadro_33.jpeg" data-lightbox="mygallery"><img src="images/quadro_33.jpeg" width="300px"></a>
             <a href="images/quadro_34.jpeg" data-lightbox="mygallery"><img src="images/quadro_34.jpeg" width="300px"></a>
         </div>
+        <h1 class="centered" id="30/03/20">Aula de 30/03/2020 (Online)</h1>
+        <div class="gallery">
+            <a href="images/quadro_35.jpeg" data-lightbox="mygallery"><img src="images/quadro_35.jpeg" width="300px"></a>
+            <a href="images/quadro_36.jpeg" data-lightbox="mygallery"><img src="images/quadro_36.jpeg" width="300px"></a>
+        </div>
     </section>
 
 
@@ -100,7 +110,7 @@
     </footer>
     <script>
         function scrollToClass () {
-            const select = document.getElementById('selectBox')
+            const select = document.getElementById('selectBox');
             select.addEventListener('change', event => {
                 console.log(event.target.value)
                 document.getElementById(event.target.value).scrollIntoView();
