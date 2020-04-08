@@ -30,7 +30,7 @@
     <script>
         let numberPictures = 0;
         let numberClasses = [ // Number of images per class.
-            '1',
+            '0',
             '8',
             '15',
             '22',
@@ -70,17 +70,17 @@
             optionMaker.value = classesDays[i];
             optionMaker.innerHTML = classesDays[i];
             document.getElementById('selectBox').appendChild(optionMaker);
-            for(j=numberClasses[i];j<(Number(numberClasses[i+1]) + 1);j++){
+            for(j=(Number(numberClasses[i]));j<Number(numberClasses[i+1]);j++){
 
                 // Creates an a tag
                 let aMaker = document.createElement('a');
-                aMaker.href = 'images/quadro_' + (j) + ".jpeg";
+                aMaker.href = 'images/quadro_' + (Number(j) + 1) + ".jpeg";
                 aMaker.dataset.lightbox = "mygallery";
                 divMaker.appendChild(aMaker);
 
                 // Creates and appends an img tag to the a tag and appends it all to the body
                 let imgMaker = document.createElement('img');
-                imgMaker.src = 'images/quadro_' + (j) + ".jpeg";
+                imgMaker.src = 'images/quadro_' + (Number(j) + 1) + ".jpeg";
                 imgMaker.style.width = '300px';
                 aMaker.appendChild(imgMaker);
                 console.log(j);
