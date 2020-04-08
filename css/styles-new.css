@@ -7,10 +7,9 @@ body {
 }
 
 header {
-    background-size: 70%;
     background-color: rgb(23, 62, 189);
     background-image: url("/collage.png");
-    background-size: 100%;
+    background-size: 150%;
     padding: 140px;
     padding-left: 0;
     font-size: 20px;
@@ -73,4 +72,13 @@ span#header-span {
 
 a.border {
     color: white;
+}
+
+@media screen and (max-width: 410px) {
+    header {
+        width: 0.5em;
+        padding-right: 100%;
+        display: inline-block;
+        background-size: 100%;
+    }
 }
