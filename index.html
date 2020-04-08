@@ -4,111 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula do Fernando | Imagens</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-new.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="icon" href="images/fernando.png">
+    <link rel="icon" href="misc-images/fernando.png">
     <script src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 <body>
     <header>
-            <ul style="list-style-type: none;">
-                <li><a href="index.html">Imagens</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="pdf.html">PDF</a></li>
-                <div id="selector">
-                    Data:
-                    <select id="selectBox" onclick="scrollToClass()">
-                        <option value="16/03/20">16/03</option>
-                        <option value="18/03/20">18/03</option>
-                        <option value="19/03/20">19/03</option>
-                        <option value="25/03/20">25/03</option>
-                        <option value="26/03/20">26/03</option>
-                        <option value="30/03/20">30/03</option>
-                    </select>
-                </div>
-            </ul>
-                
+        <span id="header-span">
+            <a href="index.html" class="header-a">Imagens</a>
+            <a href="about.html" class="header-a">Sobre</a>
+            <a href="pdf.html" class="header-a">PDF</a>
+            <span style="color: white;">Data:</span>
+            <select id="selectBox" onclick="scrollToClass()">
+            </select>
+        </span>
     </header>
-
-    <section>
-        <h1 class="centered">Fotos</h1>
-        <br>
-        <h1 class="centered" id="16/03/20">Aula de 16/03/2020</h1>
-        <div class="gallery">
-            <a href="images/quadro_1.jpeg" data-lightbox="mygallery"><img src="images/quadro_1.jpeg" width="300px"></a>
-            <a href="images/quadro_2.jpeg" data-lightbox="mygallery"><img src="images/quadro_2.jpeg" width="300px"></a>
-            <a href="images/quadro_3.jpeg" data-lightbox="mygallery"><img src="images/quadro_3.jpeg" width="300px"></a>
-            <a href="images/quadro_4.jpeg" data-lightbox="mygallery"><img src="images/quadro_4.jpeg" width="300px"></a>
-            <a href="images/quadro_5.jpeg" data-lightbox="mygallery"><img src="images/quadro_5.jpeg" width="300px"></a>
-            <a href="images/quadro_6.jpeg" data-lightbox="mygallery"><img src="images/quadro_6.jpeg" width="300px"></a>
-            <a href="images/quadro_7.jpeg" data-lightbox="mygallery"><img src="images/quadro_7.jpeg" width="300px"></a>
-            <a href="images/quadro_8.jpeg" data-lightbox="mygallery"><img src="images/quadro_8.jpeg" width="300px"></a>
-        </div>
-        <h1 class="centered" id="18/03/20">Aula de 18/03/2020</h1>
-        <div class="gallery">
-            <a href="images/quadro_9.jpeg" data-lightbox="mygallery"><img src="images/quadro_9.jpeg" width="300px"></a>
-            <a href="images/quadro_10.jpeg" data-lightbox="mygallery"><img src="images/quadro_10.jpeg" width="300px"></a>
-            <a href="images/quadro_11.jpeg" data-lightbox="mygallery"><img src="images/quadro_11.jpeg" width="300px"></a>
-            <a href="images/quadro_12.jpeg" data-lightbox="mygallery"><img src="images/quadro_12.jpeg" width="300px"></a>
-            <a href="images/quadro_13.jpeg" data-lightbox="mygallery"><img src="images/quadro_13.jpeg" width="300px"></a>
-            <a href="images/quadro_14.jpeg" data-lightbox="mygallery"><img src="images/quadro_14.jpeg" width="300px"></a>
-            <a href="images/quadro_15.jpeg" data-lightbox="mygallery"><img src="images/quadro_15.jpeg" width="300px"></a>
-        </div>
-        <h1 class="centered" id="19/03/20">Aula de 19/03/2020 (Online)</h1>
-        <div class="gallery">
-            <a href="images/quadro_16.jpeg" data-lightbox="mygallery"><img src="images/quadro_16.jpeg" width="300px"></a>
-            <a href="images/quadro_17.jpeg" data-lightbox="mygallery"><img src="images/quadro_17.jpeg" width="300px"></a>
-            <a href="images/quadro_18.jpeg" data-lightbox="mygallery"><img src="images/quadro_18.jpeg" width="300px"></a>
-            <a href="images/quadro_19.jpeg" data-lightbox="mygallery"><img src="images/quadro_19.jpeg" width="300px"></a>
-            <a href="images/quadro_20.jpeg" data-lightbox="mygallery"><img src="images/quadro_20.jpeg" width="300px"></a>
-            <a href="images/quadro_21.jpeg" data-lightbox="mygallery"><img src="images/quadro_21.jpeg" width="300px"></a>
-            <a href="images/quadro_22.jpeg" data-lightbox="mygallery"><img src="images/quadro_22.jpeg" width="300px"></a>
-        </div>
-        <h1 class="centered" id="25/03/20">Aula de 25/03/2020 (Online)</h1>
-        <div class="gallery">
-            <a href="images/quadro_23.jpeg" data-lightbox="mygallery"><img src="images/quadro_23.jpeg" width="300px"></a>
-            <a href="images/quadro_24.jpeg" data-lightbox="mygallery"><img src="images/quadro_24.jpeg" width="300px"></a>
-            <a href="images/quadro_25.jpeg" data-lightbox="mygallery"><img src="images/quadro_25.jpeg" width="300px"></a>
-            <a href="images/quadro_26.jpeg" data-lightbox="mygallery"><img src="images/quadro_26.jpeg" width="300px"></a>
-        </div>
-        <h1 class="centered" id="26/03/20">Aula de 26/03/2020 (Online)</h1>
-        <div class="gallery">
-            <a href="images/quadro_27.jpeg" data-lightbox="mygallery"><img src="images/quadro_27.jpeg" width="300px"></a>
-            <a href="images/quadro_28.jpeg" data-lightbox="mygallery"><img src="images/quadro_28.jpeg" width="300px"></a>
-            <a href="images/quadro_29.jpeg" data-lightbox="mygallery"><img src="images/quadro_29.jpeg" width="300px"></a>
-            <a href="images/quadro_30.jpeg" data-lightbox="mygallery"><img src="images/quadro_30.jpeg" width="300px"></a>
-            <a href="images/quadro_31.jpeg" data-lightbox="mygallery"><img src="images/quadro_31.jpeg" width="300px"></a>
-            <a href="images/quadro_32.jpeg" data-lightbox="mygallery"><img src="images/quadro_32.jpeg" width="300px"></a>
-            <a href="images/quadro_33.jpeg" data-lightbox="mygallery"><img src="images/quadro_33.jpeg" width="300px"></a>
-            <a href="images/quadro_34.jpeg" data-lightbox="mygallery"><img src="images/quadro_34.jpeg" width="300px"></a>
-        </div>
-        <h1 class="centered" id="30/03/20">Aula de 30/03/2020 (Online)</h1>
-        <div class="gallery">
-            <a href="images/quadro_35.jpeg" data-lightbox="mygallery"><img src="images/quadro_35.jpeg" width="300px"></a>
-            <a href="images/quadro_36.jpeg" data-lightbox="mygallery"><img src="images/quadro_36.jpeg" width="300px"></a>
-        </div>
-    </section>
-
-
-    <!-- 
-        ********
-        **BASE**
-        ********
-
-        <h1 class="centered" id="">Aula de </h1>
-        <div class="gallery">
-            <a href="images/quadro_" data-lightbox="mygallery"><img src="images/quadro_" width="300px"></a>
-            <a href="images/quadro_" data-lightbox="mygallery"><img src="images/quadro_" width="300px"></a>
-            <a href="images/quadro_" data-lightbox="mygallery"><img src="images/quadro_" width="300px"></a>
-            <a href="images/quadro_" data-lightbox="mygallery"><img src="images/quadro_" width="300px"></a>
-            <a href="images/quadro_" data-lightbox="mygallery"><img src="images/quadro_" width="300px"></a>
-        </div>
-     -->
-
-    <footer>
-
-    </footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="centered" style="font-size: 70px;">Fotos</h1>
+    <br>
     <script>
+        let numberPictures = 0;
+        let numberClasses = [ // Number of images per class.
+            '1',
+            '8',
+            '15',
+            '22',
+            '26',
+            '34',
+            '36',
+            '43',
+            '49',
+            '54',
+            '57'
+        ];
+        let classesDays = [
+            '16/03/20',
+            '18/03/20',
+            '19/03/20',
+            '25/03/20',
+            '26/03/20',
+            '30/03/20',
+            '2/04/20',
+            '3/04/20',
+            '6/04/20',
+            '7/04/20'
+        ];
+        for(i=0; i<classesDays.length;i++){
+            let h1Maker = document.createElement('h1');
+            h1Maker.textContent = 'Aula do dia ' + classesDays[i];
+            h1Maker.id = classesDays[i];
+            h1Maker.classList.add("centered");
+            h1Maker.style.fontSize = "70px";
+            document.body.appendChild(h1Maker);
+            let divMaker = document.createElement('div');
+            divMaker.classList.add("gallery");
+            document.body.appendChild(divMaker);
+
+            // Creates an option for the select box
+            let optionMaker = document.createElement('option');
+            optionMaker.value = classesDays[i];
+            optionMaker.innerHTML = classesDays[i];
+            document.getElementById('selectBox').appendChild(optionMaker);
+            for(j=numberClasses[i];j<(Number(numberClasses[i+1]) + 1);j++){
+
+                // Creates an a tag
+                let aMaker = document.createElement('a');
+                aMaker.href = 'images/quadro_' + (j) + ".jpeg";
+                aMaker.dataset.lightbox = "mygallery";
+                divMaker.appendChild(aMaker);
+
+                // Creates and appends an img tag to the a tag and appends it all to the body
+                let imgMaker = document.createElement('img');
+                imgMaker.src = 'images/quadro_' + (j) + ".jpeg";
+                imgMaker.style.width = '300px';
+                aMaker.appendChild(imgMaker);
+                console.log(j);
+            }
+            console.log(numberClasses[i] + ' i');
+            console.log(numberClasses[i+1] + ' i + 1');
+            // numberPictures += Number(numberClasses[i]);
+            // numberPictures = Math.abs(numberPictures);
+            // console.log(numberPictures);
+        }
         function scrollToClass () {
             const select = document.getElementById('selectBox');
             select.addEventListener('change', event => {

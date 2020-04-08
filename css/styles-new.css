@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(54, 54, 54);
+}
+
+header {
+    background-size: 70%;
+    background-color: rgb(23, 62, 189);
+    background-image: url("/collage.png");
+    background-size: 100%;
+    padding: 140px;
+    padding-left: 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+a.header-a {
+    text-decoration: none;
+    background-color: rgb(224, 224, 224);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}  
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:link {
+    color: black;
+}
+
+span#header-span {
+    position: fixed;
+    background-color: rgb(20, 60, 172);
+    width: 100%;
+    padding: 20px;
+    top: 0;
+    z-index: 100;
+}
+
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    margin: 15px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.centered {
+    text-align: center;
+}
+
+.sized {
+    font-size: 50px;
+}
+
+a.border {
+    color: white;
+}
