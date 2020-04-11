@@ -10,7 +10,8 @@ let numberClasses = [ // Number of images per class.
     '43',
     '49',
     '54',
-    '57'
+    '57',
+    '61'
 ];
 let classesDays = [
     '16/03/20',
@@ -22,7 +23,8 @@ let classesDays = [
     '2/04/20',
     '3/04/20',
     '6/04/20',
-    '7/04/20'
+    '7/04/20',
+    '9/04/20'
 ];
 for(i=0; i<classesDays.length;i++){
     let h1Maker = document.createElement('h1');
